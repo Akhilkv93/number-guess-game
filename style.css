@@ -1,0 +1,107 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+/* Container styling */
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Guess info */
+.guess-count {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+/* Form inputs */
+.guess-form {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+/* Submit button */
+.submit {
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.submit:hover {
+  background-color: #21618c;
+}
+
+/* Result message */
+.result {
+  margin-top: 1.5rem;
+}
+
+.message {
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .input,
+  .submit {
+    width: 100%;
+  }
+}
